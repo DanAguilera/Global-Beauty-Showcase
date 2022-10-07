@@ -1,77 +1,93 @@
 # Global-Beauty-Showcase
 
 Backlog (User Stories):
+
 Home Page → Daniel
+
 Persistent Nav Bar
+
 As a Global Beauty User, I to see a persistent Navbar across all the pages on the Global Beauty Brand site to easily navigate across pages
 	Given users will need to navigate across pages
 	When a user is on every web page on beauty brand
 Then they will see the same nav bar with About, Contact, and Product Buttons that will navigate them to their respective pages
 Persistent Footer
+
 As a Global Beauty User, I to see a persistent footer across all the pages on the Global Beauty Brand site to easily navigate across pages
 	Given users will need to navigate across pages
 	When a user is on every web page on beauty brand
 Then they will see the same footer with About, Contact, Product Buttons, and Copyright Notice
 Jumbotron Slideshow
+
 As a Global Beauty User, I to see a persistent jumbotron image on the homepage
 	Given users want a pleasing homepage
 	When a user lands on the global beauty homepage
 Then they will see a persistent image on the homepage
 Buttons (Types only)
+
 As a Global Beauty User, when viewing the home page, I want to be able to click a button to select which type of beauty product I want to review
 	Given users can select different beauty products to review 
 	When a user navigates to the beauty home page
 Then they will be able to choose the type of beauty product they want to review (Blush, Bronzer, Eyebrow, Eyeliner, Eyeshadow, Foundation, Lip Liner, Mascara)
+
 Product Page (Unfiltered) → Paula
+
 Navigate to Product Page
+
 As a Global Beauty User, I want when I click the Product thumbnail on the navbar to be redirected to an unfiltered product page
 	Given users can select different pages from the nav bar
 	When a user selects the product page
 Then they will be navigated to the product page
 
 Action Prompt
+
 As a Global Beauty User, when I am navigated to the product page, I want to be prompted to selected which type of beauty product I want to review
 	Given users can select different beauty products to review 
 	When a user navigates to the beauty product page
 Then they will see a pop up / page prompt that tells them to select the type of product they want to review
 
 Buttons to filter different Product Types
+
 As a Global Beauty User, when viewing the product page, I want to be able to click a button to select which type of beauty product I want to review
 	Given users can select different beauty products to review 
 	When a user navigates to the beauty product page
 Then they will be able to choose the type of beauty product they want to review (Blush, Bronzer, Eyebrow, Eyeliner, Eyeshadow, Foundation, Lip Liner, Mascara)
 
 Trigger Product Search API from page
+
 As a Global Beauty User, when I click the product type on the product page, I want to trigger the Makeup API to provide a list of beauty brands pre-populated based on the selected type
 	Given users can select the product type from the product page
 	When a user clicks a specific product type button
 Then they will trigger the makeup API to fetch the list of beauty brands associated with that product type 
 
 Product Page (Filtered) → Janaee
+
 Trigger product search API from home page
+
 As a Global Beauty User, when I click the product type on the home page, I want to be navigated to the Product Page with a list of beauty brands pre-populated based on the selected type
 	Given users can select the product type from the home page
 	When a user selects the home page
 Then they will be navigated to the product page 
 And they will trigger the makeup API to fetch the list of beauty brands associated with that product type 
 Filter down product type to a specific brand
+
 As a Global Beauty User, after I clicked the brand that I want, I want to see a list of different products of that type that that brand offers so I can select the product I want
 	Given users can select the specific brand that they want
 	When a user selects the brand
 Then they will see the list of products that match the brand and the type
 		
 Filter to video based on home page click and product page click
+
 As a Global Beauty User, after I have selected the product type and brand that I want, I want to see a list of YouTube Videos related to that product type and brand
 	Given users can select the specific brand and product type that they want
 	When a user selects a button to view tutorials
 Then they will see the list of YouTube video links and video thumbnails related to their search
 
 Watch videos on the page
+
 As a Global Beauty User, after I have selected the video related to the product type and brand that I want, I want to be able to view the video on the website without leaving the page
 	Given users can select the specific product review video they want
 	When a user selects a YouTube video to watch
 Then the video will play on the page
-
 
 Contact Us → Corbin
 
