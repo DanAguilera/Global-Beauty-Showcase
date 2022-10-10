@@ -108,12 +108,43 @@ body {
     width: 33.33%;
     padding: 5px;
     display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.card-column {
+    padding: 2rem;
+    height: auto;
 }
 
 .card-column::after {
-        content: "";
-        clear: both;
-        display: table;
-        flex: 33.33%;
-        padding: 5rem;
+    content: "";
+    clear: both;
+    display: table;
+    flex: 12%;
+    padding: 2rem;
+    width: 10rem;
+}
+
+.card-component {
+    width: 10rem;
+    height: auto;
+    border-radius: 1.6rem;
+    background: transparent;
+
+}
+
+.btn {
+    border-radius: 1.6rem;
+    background: transparent;
+    width: 10rem;
+    height: auto;
+    border: none;
+}
+
+.card-component:hover {
+    box-shadow: 0 0.5rem 2rem 0 #364366;
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+
 }
