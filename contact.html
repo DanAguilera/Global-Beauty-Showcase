@@ -16,15 +16,15 @@
 
     <section class="header">
 
-        <h1> Brand Name </h1>
+        <h1 id="header-h1"> Brand Name </h1>
 
         <nav>
 
             <ul class="navbar">
-                <li><a  id="active" href="./index.html">HOME</a></li>
-                <li><a href="">ABOUT</a></li>
-                <li><a href="">PRODUCT</a></li>
-                <li><a href=""><i id="fa-solid fa-bag-shopping"></i></a></li>
+                <li><a  id="nav-buttons" href="./index.html">HOME</a></li>
+                <li><a id="nav-buttons" href="">ABOUT</a></li>
+                <li><a id="nav-buttons" href="">PRODUCT</a></li>
+                <li><a id="nav-buttons" href=""><i id="fa-solid fa-bag-shopping"></i></a></li>
             </ul>
 
         </nav>
@@ -44,16 +44,16 @@
           <!--radio buttons end-->
           <!--slide images start-->
           <div class="slide first">
-            <img src="1.jpg" alt="">
+            <img src="images/contact-and-about-slideshow-image-1.jpeg" alt="first-image-of-various-makeup-products">
           </div>
           <div class="slide">
-            <img src="2.jpg" alt="">
+            <img src="images/contact-and-about-slideshow-image-2.jpeg" alt="second-image-of-various-makeup-products">
           </div>
           <div class="slide">
-            <img src="3.jpg" alt="">
+            <img src="images/contact-and-about-slideshow-image-3.jpg" alt="third-image-of-various-makeup-products">
           </div>
           <div class="slide">
-            <img src="4.jpg" alt="">
+            <img src="images/contact-and-about-slideshow-image-4.jpg" alt="fourth-image-of-various-makeup-products">
           </div>
           <!--slide images end-->
           <!--automatic navigation start-->
@@ -76,15 +76,7 @@
       </div>
       <!--image slider end-->
   
-      <script type="text/javascript">
-      var counter = 1;
-      setInterval(function(){
-        document.getElementById('radio' + counter).checked = true;
-        counter++;
-        if(counter > 4){
-          counter = 1;
-        }
-      }, 5000);
+      <script src="assets/js/contact.js">
       </script>
 
 </body>

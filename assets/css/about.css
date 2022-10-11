@@ -4,9 +4,43 @@ body{
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background: #ffffff;
+    background: white;
   }
   
+.header {
+    display: inline-block;
+    width: 100%;
+    background-color: gray;
+    height: 175px;
+}
+
+#header-h1 {
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.navbar {
+    background-color: gray;
+    float: right;
+    width: 50%;
+    height: 175px;
+    position: relative;
+    bottom: 84px;
+    list-style-type: none;
+}
+
+.navbar > li {
+    display:inline-block;
+}
+
+#nav-buttons {
+    display: inline-block;
+    text-decoration: none;
+    margin: 75px;
+    justify-content: center;
+    color: white;
+}
+
   .slider{
     width: 800px;
     height: 500px;
