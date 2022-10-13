@@ -1,45 +1,51 @@
 body{
     margin: 0;
     padding: 0;
-    height: 100vh;
     justify-content: center;
     align-items: center;
     background: white;
   }
   
 .header {
-    display: inline-block;
+    display: block;
     width: 100%;
+    height: 20%;
     background-color: gray;
-    height: 175px;
 }
 
-#header-h1 {
-    display: inline-block;
-    margin-left: 50px;
+.header-h1 { 
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  width: 50%;  
+}
+
+#brand-name-image {
+  display: block;
+  width: 100%;
+  height: 200px;
 }
 
 .navbar {
     background-color: gray;
-    float: right;
-    width: 50%;
-    height: 175px;
-    position: relative;
-    bottom: 84px;
     list-style-type: none;
 }
 
 .navbar > li {
-    display:inline-block;
+    display: block;
 }
 
 #nav-buttons {
-    display: inline-block;
+    display: block;
     text-decoration: none;
-    margin: 75px;
     justify-content: center;
     color: white;
 }
+
+/* slideshow code below */
 
   .slider{
     width: 800px;
