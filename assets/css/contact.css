@@ -1,48 +1,7 @@
-body{
-    margin: 0;
-    padding: 0;
-    justify-content: center;
-    align-items: center;
-    background: white;
-  }
-  
-.header {
-    display: block;
-    width: 100%;
-    height: 20%;
-    background-color: gray;
-}
 
-.header-h1 { 
-  display: block;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0;
-  width: 50%;  
-}
-
-#brand-name-image {
-  display: block;
-  width: 100%;
+#navbar-brand-image {
+  width: 200px;
   height: 200px;
-}
-
-.navbar {
-    background-color: gray;
-    list-style-type: none;
-}
-
-.navbar > li {
-    display: block;
-}
-
-#nav-buttons {
-    display: block;
-    text-decoration: none;
-    justify-content: center;
-    color: white;
 }
 
 /* slideshow code below */
