@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Global Beauty Showcase</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
 </head>
@@ -14,53 +15,22 @@
         <a href="#"><img src="./images/Pink Yellow Cute Bag Cop Ecommerce Shop Logo  (1).png" class="logo" alt=""></a>
         <div>
             <ul id="navbar">
-                <li><a  class="active" href="./index.html">HOME</a></li>
-                <li><a href="./Global-Beauty-Showcase/about.html">ABOUT</a></li>
+                <li><a  class="" href="./index.html">HOME</a></li>
+                <li><a  class="" href="./about.html">ABOUT</a></li>
                 <li><a href="">CONTACT</a></li>
-                <li><a href="">PRODUCT</a></li>
+                <li><a href="./product.html">PRODUCT</a></li>
                 <li><a href=""><i class="fa-solid fa-bag-shopping"></i></a></li>
             </ul>
         </div>
     </section>
     <section id="home">
-        <!--Global Beauty products slideshow-->
-        <div class="slideshow-container">
-            <!--Width images with number and caption text-->
-            <div>
-                <div class="mySlides fade">
-                    <div class="numbertext">1 / 8</div>
-                    <img src="./images/pexels-godisable-jacob-871494.jpg" style="width: 40%;">
-                    <div class="text">Caption Text</div>
-                </div>
-                <div class="my Slides fade">
-                    <div class="numbertext">1 / 8</div>
-                    <img src="./images/pexels-godisable-jacob-871494.jpg" style="width: 40%;">
-                    <div class="text">Caption Text</div>
-                </div>
-                <div class="my Slides fade">
-                    <div class="numbertext">1 / 8</div>
-                    <img src="./images/pexels-godisable-jacob-871494.jpg" style="width: 40%;">
-                    <div class="text">Caption Text</div>
-                </div>
-                <!--Next and previous buttons-->
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="prev" onclick="plusSlides(1)">&#10095;</a>
-            </div>
-            <br>
-
-            <!--The dots/circles-->
-        <div style="text-align: center;">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
     <!--Browse text and button-->
-        </div>
+        </div class="home-text">
         <h4>Trade-in-offer</h4>
         <h2>Super value deals</h2>
-        <h1>On all products</h1>
+        <h1><strong>On all products</strong></h1>
         <p>Save more with coupons & up to 75% off!</p>
-        <button><strong>Browse Now</strong></button>
+        <a href="./product.html"><button><strong>Browse Now</strong></button></a>
     </section>
     <script src="./script.js"></script>
 </body>
