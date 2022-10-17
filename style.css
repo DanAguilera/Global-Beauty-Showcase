@@ -12,8 +12,8 @@
     --fw-bold: 700;
 
     --clr-light: rgb(255, 255, 255);
-    --clr-dark: rgb(0, 0, 0);
-    --clr-accent: #475b52;
+    --clr-dark: rgb(74, 74, 74);
+    --clr-GBpink:rgba(189, 60, 101, 0.979);
 
     --fs-h1:3rem;
     --fs-h2: 2.5rem;
@@ -25,6 +25,7 @@
     --boxS: .25em .25em .75em rgba(0, 0, 0, 0.887),
             .125em .125em .25em rgba(0, 0, 0, 0.904);
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -71,6 +72,7 @@ p {
 body {
     width: 100%;
 }
+
 
 #header {
     display: flex;
@@ -125,7 +127,7 @@ body {
 
 /* HOME PAGE */
 #home {
-    background-image: url(./images/pexels-godisable-jacob-914668.jpg);
+    background-image: url(./images/pexels-godisable-jacob-871494.jpg);
     height: 90vh;
     width: 100%;
     background-size: cover;
@@ -146,7 +148,7 @@ body {
 }
 
 #home h1 {
-    color: rgb(60, 71, 110);
+    color: var(--clr-GBpink);
 }
 
 #home p {
@@ -156,14 +158,10 @@ body {
 #home button {
     background-image: url(./images/button.png);
     background-color: transparent;
-    color: rgb(35, 40, 60);
+    color: var(--clr-light);
     border: 0;
     padding: 14px 80px 14px 65px;
-<<<<<<< HEAD
-=======
 }
-
-/* SlideShow Content */
 
 .slideshow-container {
     max-width: 1000px;
@@ -240,5 +238,4 @@ body {
 @keyframes fade {
     from{opactiy: .4}
     to{opacity: 1}
->>>>>>> 01fe8b6 (adding in files)
 }
