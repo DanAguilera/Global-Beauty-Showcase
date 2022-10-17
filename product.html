@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Global Beauty Showcase - Product </title>
-    <link rel="stylesheet" href="assets/css/product.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="assets/css/product.css">
+
 </head>
 <body>
     <section id="header">
@@ -22,69 +24,100 @@
         </div>
     </section>
 
-    <section class="product-type">
+    <section class="product-type-column">
 
         <div class="card-column">
-            <button class="btn">
-            <img src="images/blush.png" alt="Placeholder image" class="card-component">
+            <button class="btn" id="blush" data-universal="blush">
+            <img src="images/blush.png" alt="Placeholder image" class="product-type" id="" name="" data-universal="blush"></div>
             </button>
         </div>
 
 
         <div class="card-column">
-            <button class="btn">
-            <img src="images/bronzer.png" alt="Placeholder image" class="card-component">
+            <button class="btn" id="bronzer">
+            <img src="images/bronzer.png" alt="Placeholder image" class="product-type" id="" name="" data-universal="bronzer">
             </button>
         </div>
 
 
         <div class="card-column">
-            <button class="btn">
-            <img src="images/eyebrow.png" alt="Placeholder image" class="card-component">
+            <button class="btn" id="eyebrow">
+            <img src="images/eyebrow.png" alt="Placeholder image" class="product-type" id="" name="" data-universal="eyebrow">
             </button>
         </div>
 
 
         <div class="card-column">
-            <button class="btn">
-            <img src="images/eyeliner.png" alt="Placeholder image" class="card-component">
+            <button class="btn" id="eyeliner">
+            <img src="images/eyeliner.png" alt="Placeholder image" class="product-type" id="" name="" data-universal="eyeliner">
             </button>
         </div>
 
 
         <div class="card-column">
-            <button class="btn">
-            <img src="images/eyeshadow.png" alt="Placeholder image" class="card-component">
+            <button class="btn" id="eyeshadow">
+            <img src="images/eyeshadow.png" alt="Placeholder image" class="product-type" id="" name="" data-universal="eyeshadow">
             </button>
         </div>
 
 
         <div class="card-column">
-            <button class="btn">
-            <img src="images/foundation.png" alt="Placeholder image" class="card-component">
+            <button class="btn" id="foundation">
+            <img src="images/foundation.png" alt="Placeholder image" class="product-type" id="" name="" data-universal="foundation">
             </button>
         </div>
 
 
         <div class="card-column">
-            <button class="btn">
-            <img src="images/lipliner.png" alt="Placeholder image" class="card-component">
+            <button class="btn" id="lipliner">
+            <img src="images/lipliner.png" alt="Placeholder image" class="product-type" id="" name="" data-universal="lipliner">
             </button>
         </div>
 
 
         <div class="card-column">
-            <button class="btn">
-            <img src="images/mascara.png" alt="Placeholder image" class="card-component">
+            <button class="btn" id="mascara">
+            <img src="images/mascara.png" alt="Placeholder image" class="product-type" id="" name="" data-universal="mascara">
             </button>
         </div>
 
     </section>
 
+
+
+    <div class="search-results">
+    <div class="card-column brand-list">
+    <h3>Which brand would you like to review?</h3>
+        <a class="panel-block" id=""> <span class="panel-icon"><i class="fa-solid fa-magnifying-glass-arrow-right"></i></span>
+            BRAND 1
+        </a>
+        <a class="panel-block" id=""> <span class="panel-icon"><i class="fa-solid fa-magnifying-glass-arrow-right"></i></span>
+            BRAND 2
+        </a>
+        <a class="panel-block" id=""> <span class="panel-icon"><i class="fa-solid fa-magnifying-glass-arrow-right"></i></span>
+            BRAND 3
+        </a>
+        <a class="panel-block" id=""> <span class="panel-icon"><i class="fa-solid fa-magnifying-glass-arrow-right"></i></span>
+            BRAND 4
+        </a>
+        <a class="panel-block" id=""> <span class="panel-icon"><i class="fa-solid fa-magnifying-glass-arrow-right"></i></span>
+            BRAND 5
+        </a>
+    </div>
+
+    <div class="card-column video-list">
+        <div id="" class="video-card box">VIDEO 1</div>
+        <div id="" class="video-card box">VIDEO 2</div>
+        <div id="" class="video-card box">VIDEO 3</div>
+        <div id="" class="video-card box">VIDEO 4</div>
+        <div id="" class="video-card box">VIDEO 5</div>
+    </div>
+    </div>
 <footer>
 
 </footer>
 
-    <script src="./script.js"></script>
+    <script src="assets/js/product.js"></script>
+
 </body>
 </html>
