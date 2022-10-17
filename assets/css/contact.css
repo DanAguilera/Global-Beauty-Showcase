@@ -3,10 +3,23 @@
     --clr-dark: rgb(74, 74, 74);
     --clr-GBpink:rgba(189, 60, 101, 0.979);
     --clr-accent: #e3e6f3;
+
+    --ff-primary: 'Spartan', 'sans-serif';
+    --fw-reg: 200;
+    --fw-bold: 700;
+    --fs-h1:3rem;
+    --fs-h2: 2.5rem;
+    --fs-h3: 1.25rem;
+    --fs-h4: 20px;
+    --fs-h6: 12px;
+    --fs-body: 1rem;
+    --boxS: .25em .25em .75em rgba(0, 0, 0, 0.887),
+            .125em .125em .25em rgba(0, 0, 0, 0.904);
   }
 
   #Header-and-Navbar {
     background-color: var(--clr-accent);
+    box-shadow: var(--boxS);
   }
 
 #navbar-brand-image {
