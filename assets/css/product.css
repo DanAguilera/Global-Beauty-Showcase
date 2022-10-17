@@ -103,10 +103,9 @@ body {
     height: auto;
 }
 
-.product-type {
+.product-type-column {
     float: left;
     width: 33.33%;
-    padding: 5px;
     display: flex;
     align-items: center;
     width: 100%;
@@ -115,6 +114,7 @@ body {
 .card-column {
     padding: 2rem;
     height: auto;
+    width: 50%;
 }
 
 .card-column::after {
@@ -126,7 +126,7 @@ body {
     width: 10rem;
 }
 
-.card-component {
+.product-type{
     width: 10rem;
     height: auto;
     border-radius: 1.6rem;
@@ -142,9 +142,44 @@ body {
     border: none;
 }
 
-.card-component:hover {
+.product-type:hover {
     box-shadow: 0 0.5rem 2rem 0 #364366;
     transform: translateY(-0.1rem);
     transition: transform 150ms;
 
+}
+
+.search-results {
+    float: left;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: top;
+    text-align: center;
+}
+
+.search-results h3{
+    padding: 1rem;
+    font-weight: bold;
+    align-items: center;
+    
+}
+.search-results::after {
+    content: "";
+    clear: both;
+    display: table;
+    flex: 12%;
+    width: 10rem;
+}
+.search-results::before {
+    content: "";
+    clear: both;
+    display: table;
+    flex: 12%;
+    width: 10rem;
+}
+
+.brand-list{
+    max-height: 100%;
 }
