@@ -14,6 +14,7 @@
     --clr-light: rgb(255, 255, 255);
     --clr-dark: rgb(74, 74, 74);
     --clr-GBpink:rgba(189, 60, 101, 0.979);
+    --clr-accent: #e3e6f3;
 
     --fs-h1:3rem;
     --fs-h2: 2.5rem;
@@ -25,6 +26,8 @@
     --boxS: .25em .25em .75em rgba(0, 0, 0, 0.887),
             .125em .125em .25em rgba(0, 0, 0, 0.904);
 }
+
+
 
 * {
     margin: 0;
@@ -102,6 +105,7 @@ body {
     font-weight: 400;
     color: var(--clr-dark);
     transition: 0.3s ease;
+    cursor: pointer;
 }
 
 #navbar li a:hover, 
@@ -128,7 +132,7 @@ body {
 /* HOME PAGE */
 #home {
     background-image: url(./images/pexels-godisable-jacob-871494.jpg);
-    height: 90vh;
+    height: 100vh;
     width: 100%;
     background-size: cover;
     background-position: top 25% right 0; 
@@ -147,7 +151,7 @@ body {
     color: var(--clr-light);
 }
 
-#home h1 {
+#home h1 strong{
     color: var(--clr-GBpink);
 }
 
@@ -163,81 +167,18 @@ body {
     padding: 14px 80px 14px 65px;
 }
 
+#home button strong {
+    color: white;
+    cursor: pointer;
+}
+
+
 /* SlideShow Content */
 
-.slideshow-container {
-    max-width: 1000px;
+.container {
+    width: 30%;
+    height: 40vh;
     position: relative;
-    margin: auto;
-}
-
-.mySlides {
-    display: none;
-}
-
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: black;
-    font-weight: bold;
-    font-size: 18px;
-    transition: .6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-}
-
-.text {
-    color: black;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-}
-
-.numbertext {
-    color: black;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-    background-color: #717171;
-}
-
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@keyframes fade {
-    from{opactiy: .4}
-    to{opacity: 1}
+    left: 70%;
+    top: 25%;
 }
