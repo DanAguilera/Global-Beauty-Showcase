@@ -15,82 +15,122 @@
 
 <!-- Section for header and navbar below -->
 
-<nav class="navbar" role="navigation" aria-label="main navigation" id="Header-and-Navbar">
-  <div class="navbar-brand">
-    <a class="navbar-brand-image" href="https://bulma.io">
-      <img src="images/Pink Yellow Cute Bag Cop Ecommerce Shop Logo  (1).png" id="navbar-brand-image">
-    </a>
-
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-
-  <div id="navbarBasicExample" class="navbar-menu">
-
-    <div class="navbar-end">
-      <a class="navbar-item m-6">
-        Home
+  <nav class="navbar" role="navigation" aria-label="main navigation" id="Header-and-Navbar">
+    <div class="navbar-brand">
+      <a class="navbar-brand-image" href="https://bulma.io">
+        <img src="images/Pink Yellow Cute Bag Cop Ecommerce Shop Logo  (1).png" id="navbar-brand-image">
       </a>
-      <a class="navbar-item m-6">
-        About
-      </a>
-      <a class="navbar-item m-6">
-        Product
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
       </a>
     </div>
-  </div>
-</nav>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+
+      <div class="navbar-end">
+        <a class="navbar-item m-6">
+          Home
+        </a>
+       <a class="navbar-item m-6">
+         About
+        </a>
+       <a class="navbar-item m-6">
+         Product
+       </a>
+      </div>
+    </div>
+  </nav>
 
     <!-- Section for JUMBOtron slideshow below -->
 
     <!--image slider start-->
-    <div class="slider">
-        <div class="slides">
-          <!--radio buttons start-->
-          <input type="radio" name="radio-btn" id="radio1">
-          <input type="radio" name="radio-btn" id="radio2">
-          <input type="radio" name="radio-btn" id="radio3">
-          <input type="radio" name="radio-btn" id="radio4">
-          <!--radio buttons end-->
-          <!--slide images start-->
-          <div class="slide first">
-            <img src="images/contact-and-about-slideshow-image-1.jpeg" alt="first-image-of-various-makeup-products">
-          </div>
-          <div class="slide">
-            <img src="images/contact-and-about-slideshow-image-2.jpeg" alt="second-image-of-various-makeup-products">
-          </div>
-          <div class="slide">
-            <img src="images/contact-and-about-slideshow-image-3.jpg" alt="third-image-of-various-makeup-products">
-          </div>
-          <div class="slide">
-            <img src="images/contact-and-about-slideshow-image-4.jpg" alt="fourth-image-of-various-makeup-products">
-          </div>
-          <!--slide images end-->
-          <!--automatic navigation start-->
-          <div class="navigation-auto">
-            <div class="auto-btn1"></div>
-            <div class="auto-btn2"></div>
-            <div class="auto-btn3"></div>
-            <div class="auto-btn4"></div>
-          </div>
-          <!--automatic navigation end-->
-        </div>
-        <!--manual navigation start-->
-        <div class="navigation-manual">
-          <label for="radio1" class="manual-btn"></label>
-          <label for="radio2" class="manual-btn"></label>
-          <label for="radio3" class="manual-btn"></label>
-          <label for="radio4" class="manual-btn"></label>
-        </div>
-        <!--manual navigation end-->
+  <div class="slider">
+    <div class="slides">
+       <!--radio buttons start-->
+       <input type="radio" name="radio-btn" id="radio1">
+       <input type="radio" name="radio-btn" id="radio2">
+       <input type="radio" name="radio-btn" id="radio3">
+       <input type="radio" name="radio-btn" id="radio4">
+      <!--radio buttons end-->
+       <!--slide images start-->
+      <div class="slide first">
+        <img src="images/contact-and-about-slideshow-image-1.jpeg" alt="first-image-of-various-makeup-products">
       </div>
+      <div class="slide">
+        <img src="images/contact-and-about-slideshow-image-2.jpeg" alt="second-image-of-various-makeup-products">
+      </div>
+      <div class="slide">
+        <img src="images/contact-and-about-slideshow-image-3.jpg" alt="third-image-of-various-makeup-products">
+      </div>
+      <div class="slide">
+        <img src="images/contact-and-about-slideshow-image-4.jpg" alt="fourth-image-of-various-makeup-products">
+      </div>
+      <!--slide images end-->
+      <!--automatic navigation start-->
+      <div class="navigation-auto">
+        <div class="auto-btn1"></div>
+        <div class="auto-btn2"></div>
+        <div class="auto-btn3"></div>
+        <div class="auto-btn4"></div>
+      </div>
+      <!--automatic navigation end-->
+    </div>
+      <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+      <!--manual navigation end-->
+  </div>
       <!--image slider end-->
+
+  <!-- Contact form start -->
+  <div class="container">
+    <form action="action_page.php">
   
-      <script src="assets/js/contact.js">
-      </script>
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+  
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+  
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email" placeholder="Your email..">
+  
+      <label for="subject">Reason for contact</label>
+      <textarea id="reason-for-contact" name="subject" placeholder="How can we help you today?" style="height:200px"></textarea>
+  
+      <input type="submit" value="Submit" id="submit-button">
+  
+    </form>
+  </div>
+
+  <!-- Contact form end -->
+
+  <nav id="footer-nav">
+    
+    <a id="footer-nav-button" href="index.html">
+      Home
+    </a>
+    <a id="footer-nav-button" href="about.html">
+      About
+    </a>
+    <a id="footer-nav-button" href="product.html">
+      Product
+    </a>
+
+  </nav>
+
+
+
+
+  <script src="assets/js/contact.js">
+  </script>
 
 </body>
 

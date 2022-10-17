@@ -29,3 +29,25 @@ setInterval(function(){
     counter = 1;
   }
 }, 5000);
+
+var firstNameInput = document.querySelector("#fname");
+var lastNameInput = document.querySelector("#lname");
+var emailInput = document.querySelector("#email");
+var contactReasonInput = document.querySelector("#reason-for-contact");
+var submitButton = document.querySelector("#submit-button");
+
+submitButton.addEventListener("click", function(event) {
+  event.preventDefault();
+  
+  // create user object from submission
+  var user = {
+    firstName: firstNameInput.value.trim(),
+    lastName: lastNameInput.value.trim(),
+    email: emailInput.value.trim(),
+    contactReason: contactReasonInput.value.trim()
+  };
+
+  // set new submission to local storage 
+  localStorage.setItem("user", JSON.stringify(user));
+  console.log(localStorage);
+});
