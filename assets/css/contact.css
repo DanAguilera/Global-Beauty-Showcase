@@ -1,8 +1,12 @@
   :root {
-  --clr-light: rgb(255, 255, 255);
-    --clr-dark: rgb(0, 0, 0);
-    --clr-accent: #475B52;
-    --clr-red: #f13131;
+    --clr-light: rgb(255, 255, 255);
+    --clr-dark: rgb(74, 74, 74);
+    --clr-GBpink:rgba(189, 60, 101, 0.979);
+    --clr-accent: #e3e6f3;
+  }
+
+  #Header-and-Navbar {
+    background-color: var(--clr-accent);
   }
 
 #navbar-brand-image {
@@ -13,7 +17,7 @@
 input[type=text], select, textarea {
   width: 100%; /* Full width */
   padding: 12px; /* Some padding */ 
-  border: 1px solid var(--clr-accent); /* Gray border */
+  border: 1px solid var(--clr-dark); /* Gray border */
   border-radius: 4px; /* Rounded borders */
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
@@ -23,7 +27,7 @@ input[type=text], select, textarea {
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-  background-color: var(--clr-red);
+  background-color: var(--clr-GBpink);
   color: white;
   padding: 12px 20px;
   border: none;
@@ -33,14 +37,14 @@ input[type=submit] {
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-  background-color: var(--clr-red);;
+  background-color: var(--clr-GBpink);;
 }
 
 /* Footer Nav CSS start */
 
 #footer-nav {
   display: block;
-  background-color: var(--clr-accent);
+  background-color: var(--clr-dark);
   height: 150px;
   width: 100%;
 }
@@ -110,7 +114,7 @@ input[type=submit]:hover {
 /* edit margin-top to align all buttons */
 
   .manual-btn {
-    border: 2px solid var(--clr-accent);
+    border: 2px solid var(--clr-dark);
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -122,7 +126,7 @@ input[type=submit]:hover {
   }
   
   .manual-btn:hover {
-    background: #f13131;
+    background: var(--clr-GBpink);
   }
   
   #radio1:checked ~ .first {
@@ -154,7 +158,7 @@ input[type=submit]:hover {
 /* edit margin-top to align all buttons */
 
   .navigation-auto div {
-    border: 2px solid #f13131;
+    border: 2px solid var(--clr-GBpink);
     padding: 5px;
     border-radius: 10px;
     transition: 1s;
@@ -165,19 +169,19 @@ input[type=submit]:hover {
   }
   
   #radio1:checked ~ .navigation-auto .auto-btn1 {
-    background: #f13131;
+    background: var(--clr-GBpink);
   }
   
   #radio2:checked ~ .navigation-auto .auto-btn2 {
-    background: #f13131;
+    background: var(--clr-GBpink);
   }
   
   #radio3:checked ~ .navigation-auto .auto-btn3 {
-    background: #f13131;
+    background: var(--clr-GBpink);
   }
   
   #radio4:checked ~ .navigation-auto .auto-btn4 {
-    background: #f13131;
+    background: var(--clr-GBpink);
   }
 
 
@@ -225,7 +229,7 @@ input[type=submit]:hover {
 /* edit margin-top to align all buttons */
 
   .manual-btn {
-    border: 2px solid var(--clr-accent);
+    border: 2px solid var(--clr-dark);
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -237,7 +241,7 @@ input[type=submit]:hover {
   }
   
   .manual-btn:hover {
-    background: #f13131;
+    background: var(--clr-GBpink);
   }
   
   #radio1:checked ~ .first {
@@ -269,7 +273,7 @@ input[type=submit]:hover {
 /* edit margin-top to align all buttons */
 
   .navigation-auto div {
-    border: 2px solid #f13131;
+    border: 2px solid var(--clr-GBpink);
     padding: 5px;
     border-radius: 10px;
     transition: 1s;
@@ -280,19 +284,19 @@ input[type=submit]:hover {
   }
   
   #radio1:checked ~ .navigation-auto .auto-btn1 {
-    background: #f13131;
+    background: var(--clr-GBpink);
   }
   
   #radio2:checked ~ .navigation-auto .auto-btn2 {
-    background: #f13131;
+    background: var(--clr-GBpink);
   }
   
   #radio3:checked ~ .navigation-auto .auto-btn3 {
-    background: #f13131;
+    background: var(--clr-GBpink);
   }
   
   #radio4:checked ~ .navigation-auto .auto-btn4 {
-    background: #f13131;
+    background: var(--clr-GBpink);
   }
 }
 
@@ -340,7 +344,7 @@ input[type=submit]:hover {
 /* edit margin-top to align all buttons */
 
   .manual-btn {
-    border: 2px solid var(--clr-accent);
+    border: 2px solid var(--clr-dark);
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -352,7 +356,7 @@ input[type=submit]:hover {
   }
   
   .manual-btn:hover {
-    background: #f13131;
+    background: var(--clr-GBpink);
   }
   
   #radio1:checked ~ .first {
@@ -384,7 +388,7 @@ input[type=submit]:hover {
 /* edit margin-top to align all buttons */
 
   .navigation-auto div {
-    border: 2px solid #f13131;
+    border: 2px solid var(--clr-GBpink);
     padding: 5px;
     border-radius: 10px;
     transition: 1s;
@@ -395,18 +399,18 @@ input[type=submit]:hover {
   }
   
   #radio1:checked ~ .navigation-auto .auto-btn1 {
-    background: #f13131;
+    background: var(--clr-GBpink);
   }
   
   #radio2:checked ~ .navigation-auto .auto-btn2 {
-    background: #f13131;
+    background: var(--clr-GBpink);
   }
   
   #radio3:checked ~ .navigation-auto .auto-btn3 {
-    background: #f13131;
+    background: var(--clr-GBpink);
   }
   
   #radio4:checked ~ .navigation-auto .auto-btn4 {
-    background: #f13131;
+    background: var(--clr-GBpink);
   }
 }
