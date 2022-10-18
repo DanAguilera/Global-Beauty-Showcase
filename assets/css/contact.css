@@ -1,19 +1,91 @@
   :root {
-  --clr-light: rgb(255, 255, 255);
-    --clr-dark: rgb(0, 0, 0);
-    --clr-accent: #475B52;
-    --clr-red: #f13131;
+    --clr-light: rgb(255, 255, 255);
+    --clr-dark: rgb(74, 74, 74);
+    --clr-GBpink:rgba(189, 60, 101, 0.979);
+    --clr-accent: #e3e6f3;
+
+    --ff-primary: 'Spartan', 'sans-serif';
+    --fw-reg: 200;
+    --fw-bold: 700;
+    --fs-h1:3rem;
+    --fs-h2: 2.5rem;
+    --fs-h3: 1.25rem;
+    --fs-h4: 20px;
+    --fs-h6: 12px;
+    --fs-body: 1rem;
+    --boxS: .25em .25em .75em rgba(0, 0, 0, 0.887),
+            .125em .125em .25em rgba(0, 0, 0, 0.904);
   }
 
-#navbar-brand-image {
-  width: 200px;
-  height: 200px;
+#header {
+    display: inline-block;
+    height: 100px;
+    width: 100%;
+    background:  #e3e6f3;/**/
+    box-shadow: var(--boxS);
+}
+
+#nav-div {
+  display: flex;
+  width: 60%;
+  margin-left: auto;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    position: relative;
+    bottom: 65px;
+}
+
+#navbar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    position: relative;
+}
+
+#navbar li {
+    padding: 0 10px;
+    font-size: 8px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 8px;
+    font-weight: 400;
+    color: var(--clr-dark);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+#navbar li a:hover, 
+#navbar li a.active{
+   color: rgb(60, 71, 110);
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: rgb(60, 71, 110);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#logo {
+  display: inline-block;
+    width: 100px;
+    height: 100px;
 }
 
 input[type=text], select, textarea {
   width: 100%; /* Full width */
   padding: 12px; /* Some padding */ 
-  border: 1px solid var(--clr-accent); /* Gray border */
+  border: 1px solid var(--clr-dark); /* Gray border */
   border-radius: 4px; /* Rounded borders */
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
@@ -23,7 +95,7 @@ input[type=text], select, textarea {
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-  background-color: var(--clr-red);
+  background-color: var(--clr-GBpink);
   color: white;
   padding: 12px 20px;
   border: none;
@@ -33,14 +105,14 @@ input[type=submit] {
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-  background-color: var(--clr-red);;
+  background-color: var(--clr-GBpink);;
 }
 
 /* Footer Nav CSS start */
 
 #footer-nav {
   display: block;
-  background-color: var(--clr-accent);
+  background-color: var(--clr-dark);
   height: 150px;
   width: 100%;
 }
@@ -72,7 +144,7 @@ input[type=submit]:hover {
     height: 300px;
     border-radius: 10px;
     overflow: hidden;
-    margin-top: 5px;
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -110,7 +182,7 @@ input[type=submit]:hover {
 /* edit margin-top to align all buttons */
 
   .manual-btn {
-    border: 2px solid var(--clr-accent);
+    border: 2px solid var(--clr-dark);
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -122,7 +194,7 @@ input[type=submit]:hover {
   }
   
   .manual-btn:hover {
-    background: #f13131;
+    background: var(--clr-GBpink);
   }
   
   #radio1:checked ~ .first {
@@ -154,7 +226,7 @@ input[type=submit]:hover {
 /* edit margin-top to align all buttons */
 
   .navigation-auto div {
-    border: 2px solid #f13131;
+    border: 2px solid var(--clr-GBpink);
     padding: 5px;
     border-radius: 10px;
     transition: 1s;
@@ -165,29 +237,95 @@ input[type=submit]:hover {
   }
   
   #radio1:checked ~ .navigation-auto .auto-btn1 {
-    background: #f13131;
+    background: var(--clr-GBpink);
   }
   
   #radio2:checked ~ .navigation-auto .auto-btn2 {
-    background: #f13131;
+    background: var(--clr-GBpink);
   }
   
   #radio3:checked ~ .navigation-auto .auto-btn3 {
-    background: #f13131;
+    background: var(--clr-GBpink);
   }
   
   #radio4:checked ~ .navigation-auto .auto-btn4 {
-    background: #f13131;
+    background: var(--clr-GBpink);
   }
 
 
 @media only screen and (min-width: 800px) {
+
+  #header {
+    display: inline-block;
+    height: 100px;
+    width: 100%;
+    background:  #e3e6f3;/**/
+    box-shadow: var(--boxS);
+}
+
+#nav-div {
+  display: flex;
+  width: 60%;
+  margin-left: auto;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    position: relative;
+    bottom: 65px;
+}
+
+#navbar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    position: relative;
+}
+
+#navbar li {
+    padding: 0 20px;
+    font-size: 12px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--clr-dark);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+#navbar li a:hover, 
+#navbar li a.active{
+   color: rgb(60, 71, 110);
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: rgb(60, 71, 110);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#logo {
+  display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
   .slider {
     width: 80%;
     height: 600px;
     border-radius: 10px;
     overflow: hidden;
-    margin-top: 5px;
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -225,7 +363,7 @@ input[type=submit]:hover {
 /* edit margin-top to align all buttons */
 
   .manual-btn {
-    border: 2px solid var(--clr-accent);
+    border: 2px solid var(--clr-dark);
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -237,7 +375,7 @@ input[type=submit]:hover {
   }
   
   .manual-btn:hover {
-    background: #f13131;
+    background: var(--clr-GBpink);
   }
   
   #radio1:checked ~ .first {
@@ -269,7 +407,7 @@ input[type=submit]:hover {
 /* edit margin-top to align all buttons */
 
   .navigation-auto div {
-    border: 2px solid #f13131;
+    border: 2px solid var(--clr-GBpink);
     padding: 5px;
     border-radius: 10px;
     transition: 1s;
@@ -280,29 +418,95 @@ input[type=submit]:hover {
   }
   
   #radio1:checked ~ .navigation-auto .auto-btn1 {
-    background: #f13131;
+    background: var(--clr-GBpink);
   }
   
   #radio2:checked ~ .navigation-auto .auto-btn2 {
-    background: #f13131;
+    background: var(--clr-GBpink);
   }
   
   #radio3:checked ~ .navigation-auto .auto-btn3 {
-    background: #f13131;
+    background: var(--clr-GBpink);
   }
   
   #radio4:checked ~ .navigation-auto .auto-btn4 {
-    background: #f13131;
+    background: var(--clr-GBpink);
   }
 }
 
 @media only screen and (min-width: 1850px) {
+
+  #header {
+    display: inline-block;
+    height: 150px;
+    width: 100%;
+    background:  #e3e6f3;/**/
+    box-shadow: var(--boxS);
+}
+
+#nav-div {
+  display: flex;
+  width: 60%;
+  margin-left: auto;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    position: relative;
+    bottom: 100px;
+}
+
+#navbar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    position: relative;
+}
+
+#navbar li {
+    padding: 0 20px;
+    font-size: 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--clr-dark);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+#navbar li a:hover, 
+#navbar li a.active{
+   color: rgb(60, 71, 110);
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: rgb(60, 71, 110);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#logo {
+  display: inline-block;
+    width: 150px;
+    height: 150px;
+}
+
   .slider {
     width: 80%;
     height: 800px;
     border-radius: 10px;
     overflow: hidden;
-    margin-top: 5px;
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -340,7 +544,7 @@ input[type=submit]:hover {
 /* edit margin-top to align all buttons */
 
   .manual-btn {
-    border: 2px solid var(--clr-accent);
+    border: 2px solid var(--clr-dark);
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -352,7 +556,7 @@ input[type=submit]:hover {
   }
   
   .manual-btn:hover {
-    background: #f13131;
+    background: var(--clr-GBpink);
   }
   
   #radio1:checked ~ .first {
@@ -384,7 +588,7 @@ input[type=submit]:hover {
 /* edit margin-top to align all buttons */
 
   .navigation-auto div {
-    border: 2px solid #f13131;
+    border: 2px solid var(--clr-GBpink);
     padding: 5px;
     border-radius: 10px;
     transition: 1s;
@@ -395,18 +599,87 @@ input[type=submit]:hover {
   }
   
   #radio1:checked ~ .navigation-auto .auto-btn1 {
-    background: #f13131;
+    background: var(--clr-GBpink);
   }
   
   #radio2:checked ~ .navigation-auto .auto-btn2 {
-    background: #f13131;
+    background: var(--clr-GBpink);
   }
   
   #radio3:checked ~ .navigation-auto .auto-btn3 {
-    background: #f13131;
+    background: var(--clr-GBpink);
   }
   
   #radio4:checked ~ .navigation-auto .auto-btn4 {
-    background: #f13131;
+    background: var(--clr-GBpink);
   }
+}
+
+@media only screen and (min-width: 2000px) {
+
+  #header {
+    display: inline-block;
+    height: 150px;
+    width: 100%;
+    background:  #e3e6f3;/**/
+    box-shadow: var(--boxS);
+}
+
+#nav-div {
+  display: flex;
+  width: 60%;
+  margin-left: 1000px;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    position: relative;
+    bottom: 100px;
+}
+
+#navbar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    position: relative;
+}
+
+#navbar li {
+    padding: 0 20px;
+    font-size: 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--clr-dark);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+#navbar li a:hover, 
+#navbar li a.active{
+   color: rgb(60, 71, 110);
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: rgb(60, 71, 110);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#logo {
+  display: inline-block;
+    width: 150px;
+    height: 150px;
+}
+
 }
