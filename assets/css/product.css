@@ -182,4 +182,7 @@ body {
 
 .brand-list{
     max-height: 100%;
+    width: 50rem;
+    text-transform: uppercase;
+    text-align: left;
 }
