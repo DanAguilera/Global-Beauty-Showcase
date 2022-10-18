@@ -17,14 +17,69 @@
             .125em .125em .25em rgba(0, 0, 0, 0.904);
   }
 
-  #Header-and-Navbar {
-    background-color: var(--clr-accent);
+#header {
+    display: inline-block;
+    height: 100px;
+    width: 100%;
+    background:  #e3e6f3;/**/
     box-shadow: var(--boxS);
-  }
+}
 
-#navbar-brand-image {
-  width: 200px;
-  height: 200px;
+#nav-div {
+  display: flex;
+  width: 60%;
+  margin-left: auto;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    position: relative;
+    bottom: 65px;
+}
+
+#navbar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    position: relative;
+}
+
+#navbar li {
+    padding: 0 10px;
+    font-size: 8px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 8px;
+    font-weight: 400;
+    color: var(--clr-dark);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+#navbar li a:hover, 
+#navbar li a.active{
+   color: rgb(60, 71, 110);
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: rgb(60, 71, 110);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#logo {
+  display: inline-block;
+    width: 100px;
+    height: 100px;
 }
 
 input[type=text], select, textarea {
@@ -89,7 +144,7 @@ input[type=submit]:hover {
     height: 300px;
     border-radius: 10px;
     overflow: hidden;
-    margin-top: 5px;
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -199,12 +254,78 @@ input[type=submit]:hover {
 
 
 @media only screen and (min-width: 800px) {
+
+  #header {
+    display: inline-block;
+    height: 100px;
+    width: 100%;
+    background:  #e3e6f3;/**/
+    box-shadow: var(--boxS);
+}
+
+#nav-div {
+  display: flex;
+  width: 60%;
+  margin-left: auto;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    position: relative;
+    bottom: 65px;
+}
+
+#navbar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    position: relative;
+}
+
+#navbar li {
+    padding: 0 20px;
+    font-size: 12px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--clr-dark);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+#navbar li a:hover, 
+#navbar li a.active{
+   color: rgb(60, 71, 110);
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: rgb(60, 71, 110);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#logo {
+  display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
   .slider {
     width: 80%;
     height: 600px;
     border-radius: 10px;
     overflow: hidden;
-    margin-top: 5px;
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -314,12 +435,78 @@ input[type=submit]:hover {
 }
 
 @media only screen and (min-width: 1850px) {
+
+  #header {
+    display: inline-block;
+    height: 150px;
+    width: 100%;
+    background:  #e3e6f3;/**/
+    box-shadow: var(--boxS);
+}
+
+#nav-div {
+  display: flex;
+  width: 60%;
+  margin-left: auto;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    position: relative;
+    bottom: 100px;
+}
+
+#navbar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    position: relative;
+}
+
+#navbar li {
+    padding: 0 20px;
+    font-size: 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--clr-dark);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+#navbar li a:hover, 
+#navbar li a.active{
+   color: rgb(60, 71, 110);
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: rgb(60, 71, 110);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#logo {
+  display: inline-block;
+    width: 150px;
+    height: 150px;
+}
+
   .slider {
     width: 80%;
     height: 800px;
     border-radius: 10px;
     overflow: hidden;
-    margin-top: 5px;
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -426,4 +613,73 @@ input[type=submit]:hover {
   #radio4:checked ~ .navigation-auto .auto-btn4 {
     background: var(--clr-GBpink);
   }
+}
+
+@media only screen and (min-width: 2000px) {
+
+  #header {
+    display: inline-block;
+    height: 150px;
+    width: 100%;
+    background:  #e3e6f3;/**/
+    box-shadow: var(--boxS);
+}
+
+#nav-div {
+  display: flex;
+  width: 60%;
+  margin-left: 1000px;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    position: relative;
+    bottom: 100px;
+}
+
+#navbar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    position: relative;
+}
+
+#navbar li {
+    padding: 0 20px;
+    font-size: 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--clr-dark);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+#navbar li a:hover, 
+#navbar li a.active{
+   color: rgb(60, 71, 110);
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: rgb(60, 71, 110);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#logo {
+  display: inline-block;
+    width: 150px;
+    height: 150px;
+}
+
 }
