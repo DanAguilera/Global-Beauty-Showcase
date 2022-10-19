@@ -71,7 +71,7 @@ var videoSearch = function (event) {
             console.log(response);
             response.json().then(function (videoList) {
 
-                if (videoList.length === 0){
+                if (videoList.items.length === 0){
                     return
                 }
             
