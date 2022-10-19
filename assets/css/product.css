@@ -57,6 +57,7 @@ p {
 }
 body {
     width: 100%;
+    background: transparent;
 }
 #header {
     display: flex;
