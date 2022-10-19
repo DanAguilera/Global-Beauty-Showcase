@@ -189,4 +189,5 @@ body {
 
 .video-list{
     max-height: 100%;
+    text-transform: uppercase;
 }
