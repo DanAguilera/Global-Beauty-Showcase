@@ -77,15 +77,15 @@ var videoSearch = function (event) {
             
                 for (var i = 0; i < videoList.length; i++) {
             
-                    var selectedVideo = selectedVideo[i].videoId;
+                    var selectedVideo = videoList[i].videoId;
                     console.log(selectedVideo);
                     var selectedVideoEl = document.createElement('div');
-                    selectedVideoEl.classList = 'video-list';
+                    // selectedVideoEl.classList = 'video-list';
                     selectedVideoEl.setAttribute('id', 'ytplayer');
                     selectedVideoEl.setAttribute('type', 'text/html');
                     selectedVideoEl.setAttribute('width','640');
                     selectedVideoEl.setAttribute('height','360');
-                    selectedVideoEl.setAttribute('src','https://wwww.youtube.com/embed/' + videoId);
+                    selectedVideoEl.setAttribute('src','https://wwww.youtube.com/embed/' + selectedVideo);
                     selectedVideoEl.setAttribute('frameborder', '0');
                     selectedVideoList.appendChild(selectedVideoEl)
 
