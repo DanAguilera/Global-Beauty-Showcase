@@ -29,7 +29,7 @@ As a Global Beauty User, when viewing the home page, I want to be able to click 
 	When a user navigates to the beauty home page
 Then they will be able to choose the type of beauty product they want to review (Blush, Bronzer, Eyebrow, Eyeliner, Eyeshadow, Foundation, Lip Liner, Mascara)
 
-Product Page (Unfiltered) → Paula
+Product Page → Janaee
 
 Navigate to Product Page
 
@@ -58,8 +58,6 @@ As a Global Beauty User, when I click the product type on the product page, I wa
 	Given users can select the product type from the product page
 	When a user clicks a specific product type button
 Then they will trigger the makeup API to fetch the list of beauty brands associated with that product type 
-
-Product Page (Filtered) → Janaee
 
 Trigger product search API from home page
 
