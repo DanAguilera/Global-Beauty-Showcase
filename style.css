@@ -124,15 +124,16 @@ body {
     left: 20px;
 }
 
-.logo {
+#logo {
     width: 175px;
     height: auto;
 }
 
+
 /* HOME PAGE */
 #home {
     background-image: url(./images/pexels-godisable-jacob-871494.jpg);
-    height: 100vh;
+    height: 110vh;
     width: 100%;
     background-size: cover;
     background-position: top 25% right 0; 
@@ -152,10 +153,10 @@ body {
 }
 
 #home h1 strong{
-    color: var(--clr-GBpink);
+    color: rgba(255, 221, 0, 0.945);
 }
 
-#home p {
+#home p strong {
     color: var(--clr-light);
 }
 
@@ -182,3 +183,29 @@ body {
     left: 70%;
     top: 25%;
 }
+/*-----Footer-----*/
+.footer {
+    width: 100%;
+    min-height: 10vh;
+    text-align: center;
+    padding: 10px 0;
+    background-color: var(--clr-accent);
+}
+
+.footer h4 {
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.icons .fa-brands {
+   color: var(--clr-GBpink);
+   margin: 0 13px;
+   cursor: pointer;
+   padding: 18px 0;
+}
+
+.footer p {
+    font-size: 12px;
+}
+/*------MEDIA QUERY-----*/

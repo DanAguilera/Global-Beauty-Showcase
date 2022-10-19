@@ -186,3 +186,8 @@ body {
     text-transform: uppercase;
     text-align: left;
 }
+
+.video-list{
+    max-height: 100%;
+    text-transform: uppercase;
+}
