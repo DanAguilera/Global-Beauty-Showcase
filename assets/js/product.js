@@ -46,5 +46,3 @@ var getProductType = function (event) {
     });
 
 };
-
-
