@@ -75,12 +75,12 @@ var videoSearch = function (event) {
                     return
                 }
             
-                for (var i = 0; i < videoList.length; i++) {
+                for (var i = 0; i < videoList.items.length; i++) {
             
-                    var selectedVideo = videoList[i].videoId;
+                    var selectedVideo = videoList.items[i].id.videoId;
                     console.log(selectedVideo);
                     var selectedVideoEl = document.createElement('div');
-                    // selectedVideoEl.classList = 'video-list';
+                    selectedVideoEl.classList = 'tile';
                     selectedVideoEl.setAttribute('id', 'ytplayer');
                     selectedVideoEl.setAttribute('type', 'text/html');
                     selectedVideoEl.setAttribute('width','640');
