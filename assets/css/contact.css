@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap);
+  
   :root {
     --clr-light: rgb(255, 255, 255);
     --clr-dark: rgb(74, 74, 74);
@@ -16,6 +18,13 @@
     --boxS: .25em .25em .75em rgba(0, 0, 0, 0.887),
             .125em .125em .25em rgba(0, 0, 0, 0.904);
   }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--ff-primary)
+}
 
 #header {
     display: inline-block;
@@ -110,22 +119,26 @@ input[type=submit]:hover {
 
 /* Footer Nav CSS start */
 
-#footer-nav {
-  display: block;
-  background-color: var(--clr-dark);
-  height: 150px;
+#footer {
   width: 100%;
+  min-height: 10vh;
+  text-align: center;
+  padding: 10px 0;
+  background-color: var(--clr-accent);
 }
-
-#footer-nav-button {
-  display: inline-block;
-  color: var(--clr-dark);
-  background-color: var(--clr-light);
-  border-radius: 10px;
-  padding: 10px;
-  margin: 20px;
-  position: relative;
-  left: 20px
+#footer h4 {
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+.icons .fa-brands {
+ color: var(--clr-GBpink);
+ margin: 0 13px;
+ cursor: pointer;
+ padding: 18px 0;
+}
+#footer p {
+  font-size: 12px;
 }
 
 /* Footer Nav CSS end */
@@ -619,7 +632,7 @@ input[type=submit]:hover {
 
   #header {
     display: inline-block;
-    height: 150px;
+    height: 200px;
     width: 100%;
     background:  #e3e6f3;/**/
     box-shadow: var(--boxS);
@@ -627,13 +640,13 @@ input[type=submit]:hover {
 
 #nav-div {
   display: flex;
-  width: 60%;
-  margin-left: 1000px;
+  width: 30%;
+  margin-left: 70%;
     align-items: center;
     justify-content: center;
     list-style: none;
     position: relative;
-    bottom: 100px;
+    bottom: 125px;
 }
 
 #navbar {
@@ -678,8 +691,8 @@ input[type=submit]:hover {
 
 #logo {
   display: inline-block;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
 }
 
 }
