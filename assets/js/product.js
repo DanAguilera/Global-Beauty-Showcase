@@ -79,8 +79,8 @@ var videoSearch = function (event) {
             
                     var selectedVideo = videoList.items[i].id.videoId;
                     console.log(selectedVideo);
-                    var selectedVideoEl = document.createElement('div');
-                    selectedVideoEl.classList = 'tile';
+                    var selectedVideoEl = document.createElement('iframe');
+                    selectedVideoEl.classList = 'tile is-vertical';
                     selectedVideoEl.setAttribute('id', 'ytplayer');
                     selectedVideoEl.setAttribute('type', 'text/html');
                     selectedVideoEl.setAttribute('width','640');
