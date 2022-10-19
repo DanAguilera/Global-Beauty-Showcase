@@ -152,7 +152,6 @@ body {
 .search-results {
     float: left;
     padding: 2rem;
-    display: flex;
     align-items: center;
     width: 100%;
     justify-content: top;
@@ -185,4 +184,8 @@ body {
     width: 50rem;
     text-transform: uppercase;
     text-align: left;
+}
+
+.video-list{
+    max-height: 100%;
 }
