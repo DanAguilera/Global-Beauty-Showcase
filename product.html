@@ -27,57 +27,57 @@
     <section class="product-type-column">
 
         <div class="card-column">
-            <button class="btn" id="blush" data-universal="blush">
-            <img src="images/blush.png" alt="Placeholder image" class="product-type" id="" name="" data-universal="blush"></div>
+            <button class="btn" id="blush-btn" data-universal="blush" onclick="getProductType(event);">
+            <img src="images/blush.png" alt="Placeholder image" class="product-type" id="blush-img" name="blush" data-universal="blush"></div>
             </button>
         </div>
 
 
         <div class="card-column">
-            <button class="btn" id="bronzer">
-            <img src="images/bronzer.png" alt="Placeholder image" class="product-type" id="" name="" data-universal="bronzer">
+            <button class="btn" id="bronzer-btn" data-universal="bronzer" onclick="getProductType(event);">
+            <img src="images/bronzer.png" alt="Placeholder image" class="product-type" id="bronzer-img" name="bronzer" data-universal="bronzer">
             </button>
         </div>
 
 
         <div class="card-column">
-            <button class="btn" id="eyebrow">
-            <img src="images/eyebrow.png" alt="Placeholder image" class="product-type" id="" name="" data-universal="eyebrow">
+            <button class="btn" id="eyebrow-btn" data-universal="eyebrow" onclick="getProductType(event);">
+            <img src="images/eyebrow.png" alt="Placeholder image" class="product-type" id="eyebrow-img" name="eyebrow" data-universal="eyebrow">
             </button>
         </div>
 
 
         <div class="card-column">
-            <button class="btn" id="eyeliner">
-            <img src="images/eyeliner.png" alt="Placeholder image" class="product-type" id="" name="" data-universal="eyeliner">
+            <button class="btn" id="eyeliner-btn" data-universal="eyeliner" onclick="getProductType(event);">
+            <img src="images/eyeliner.png" alt="Placeholder image" class="product-type" id="eyeliner-img" name="eyeliner" data-universal="eyeliner">
             </button>
         </div>
 
 
         <div class="card-column">
-            <button class="btn" id="eyeshadow">
-            <img src="images/eyeshadow.png" alt="Placeholder image" class="product-type" id="" name="" data-universal="eyeshadow">
+            <button class="btn" id="eyeshadow-btn" data-universal="eyeshadow" onclick="getProductType(event);">
+            <img src="images/eyeshadow.png" alt="Placeholder image" class="product-type" id="eyeshadow-img" name="eyeshadow" data-universal="eyeshadow">
             </button>
         </div>
 
 
         <div class="card-column">
-            <button class="btn" id="foundation">
-            <img src="images/foundation.png" alt="Placeholder image" class="product-type" id="" name="" data-universal="foundation">
+            <button class="btn" id="foundation-btn" data-universal="foundation" onclick="getProductType(event);">
+            <img src="images/foundation.png" alt="Placeholder image" class="product-type" id="foundation-img" name="foundation" data-universal="foundation">
             </button>
         </div>
 
 
         <div class="card-column">
-            <button class="btn" id="lipliner">
-            <img src="images/lipliner.png" alt="Placeholder image" class="product-type" id="" name="" data-universal="lipliner">
+            <button class="btn" id="lipliner-btn" data-universal="lipliner" onclick="getProductType(event);">
+            <img src="images/lipliner.png" alt="Placeholder image" class="product-type" id="lipliner-img" name="lipliner" data-universal="lipliner">
             </button>
         </div>
 
 
         <div class="card-column">
-            <button class="btn" id="mascara">
-            <img src="images/mascara.png" alt="Placeholder image" class="product-type" id="" name="" data-universal="mascara">
+            <button class="btn" id="mascara-btn" data-universal="mascara" onclick="getProductType(event);">
+            <img src="images/mascara.png" alt="Placeholder image" class="product-type" id="mascara-img" name="mascara" data-universal="mascara">
             </button>
         </div>
 
@@ -86,23 +86,8 @@
 
 
     <div class="search-results">
-    <div class="card-column brand-list">
-    <h3>Which brand would you like to review?</h3>
-        <a class="panel-block" id=""> <span class="panel-icon"><i class="fa-solid fa-magnifying-glass-arrow-right"></i></span>
-            BRAND 1
-        </a>
-        <a class="panel-block" id=""> <span class="panel-icon"><i class="fa-solid fa-magnifying-glass-arrow-right"></i></span>
-            BRAND 2
-        </a>
-        <a class="panel-block" id=""> <span class="panel-icon"><i class="fa-solid fa-magnifying-glass-arrow-right"></i></span>
-            BRAND 3
-        </a>
-        <a class="panel-block" id=""> <span class="panel-icon"><i class="fa-solid fa-magnifying-glass-arrow-right"></i></span>
-            BRAND 4
-        </a>
-        <a class="panel-block" id=""> <span class="panel-icon"><i class="fa-solid fa-magnifying-glass-arrow-right"></i></span>
-            BRAND 5
-        </a>
+    <div class="card-column brand-list" id="brand-list">
+    <h3>Which product would you like to review?</h3>
     </div>
 
     <div class="card-column video-list">
