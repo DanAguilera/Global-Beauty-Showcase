@@ -47,4 +47,5 @@ var getProductType = function (event) {
 
 };
 
-var brands
+// Youtube API key: AIzaSyDRwtIC_l1Krdko-UKXVgfwvQVahHtmkqI
+
