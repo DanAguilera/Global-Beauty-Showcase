@@ -8,6 +8,8 @@ var liplinerBtn = document.querySelector('#lipliner-btn');
 var mascaraBtn = document.querySelector('#masacara-btn');
 var brandElement = document.querySelector('.panel-block');
 var brandList = document.querySelector('#brand-list');
+var selectedVideoList = document.querySelector('#video-list');
+
 
 
 var getProductType = function (event) {
@@ -20,22 +22,26 @@ var getProductType = function (event) {
     .then(function (response) {
         if (response.ok){
             console.log(response);
-            response.json().then(function (data) {
+            response.json().then(function (productList) {
 
-                if (data.length === 0){
-                    //hide 'Which product would you like to review' container
+                if (productList.length === 0){
+                    return
                 }
             
-                for (var i = 0; i < data.length; i++) {
+                for (var i = 0; i < productList.length; i++) {
             
-                    var productBrandName = data[i].brand + ' ' + data[i].name;
+                    var productBrandName = productList[i].brand + ' ' + productList[i].name;
                     console.log(productBrandName);
                     var productBrandNameEl = document.createElement('a');
                     productBrandNameEl.classList = 'panel-block';
                     productBrandNameEl.textContent = productBrandName;
-                    brandList.appendChild(productBrandNameEl);
+                    productBrandNameEl.setAttribute('type', 'button');
+                    productBrandNameEl.setAttribute('data-universal',productBrandName);
+                    productBrandNameEl.setAttribute('onclick', 'videoSearch(event);');
+                    brandList.appendChild(productBrandNameEl)
+
                 }
-                console.log(data);
+                console.log(productList);
             });
         } else {
             alert('Error:' + response.statusText);
@@ -43,6 +49,54 @@ var getProductType = function (event) {
     })
     .catch(function (error){
         alert('Unable to retrive makeup data');
+    });
+
+};
+
+API_Key = 'AIzaSyC6xTHQkQ-sRmh_wwGUf0hObfic3e7ZDr4'
+maxResults = 10
+
+
+var videoSearch = function (event) {
+    var selectedBrand = event.target.getAttribute('data-universal');
+    console.log(selectedBrand);
+    event.preventDefault();
+
+    var youtubeAPI = 'https://www.googleapis.com/youtube/v3/search?part=snippet&key='+ API_Key + '&maxResults=' + maxResults + '&type=video&q=' + selectedBrand;
+
+    fetch(youtubeAPI)
+    .then(function (response) {
+        if (response.ok){
+            console.log(response);
+            response.json().then(function (videoList) {
+
+                if (videoList.length === 0){
+                    return
+                }
+            
+                for (var i = 0; i < videoList.length; i++) {
+            
+                    var selectedVideo = selectedVideo[i].videoId;
+                    console.log(selectedVideo);
+                    var selectedVideoEl = document.createElement('div');
+                    selectedVideoEl.classList = 'video-list';
+                    selectedVideoEl.setAttribute('id', 'ytplayer');
+                    selectedVideoEl.setAttribute('type', 'text/html');
+                    selectedVideoEl.setAttribute('width','640');
+                    selectedVideoEl.setAttribute('height','360');
+                    selectedVideoEl.setAttribute('src','https://wwww.youtube.com/embed/' + videoId);
+                    selectedVideoEl.setAttribute('frameborder', '0');
+                    selectedVideoList.appendChild(selectedVideoEl)
+
+                }
+                console.log(videoList);
+            });
+        } else {
+            alert('Error:' + response.statusText);
+        }
+    })
+    .catch(function (error){
+        alert('Unable to retrive Youtube Video');
     });
 
 };
