@@ -16,7 +16,7 @@ var getProductType = function (event) {
     var productType = event.target.getAttribute('data-universal');
     console.log(productType);
     event.preventDefault();
-    var makeupAPI = 'http://makeup-api.herokuapp.com/api/v1/products.json?product_type=' + productType;
+    var makeupAPI = 'https://makeup-api.herokuapp.com/api/v1/products.json?product_type=' + productType;
 
     fetch(makeupAPI)
     .then(function (response) {
@@ -49,6 +49,7 @@ var getProductType = function (event) {
     })
     .catch(function (error){
         alert('Unable to retrive makeup data');
+        console.log(error);
     });
 
 };
