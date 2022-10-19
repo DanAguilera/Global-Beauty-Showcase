@@ -135,6 +135,8 @@ The following animation demonstrates the application functionality:
 ![Product landing Page](./images/productpage1.png)
 ![Product type search](./images/productpage2.png)
 ![Product video search](./images/productpage3.png)
+![About page](./images/about.png)
+![Contact us page](./images/contact.png)
 
 ## Deployed Application Link
 https://danaguilera.github.io/Global-Beauty-Showcase/

@@ -57,6 +57,7 @@ p {
 }
 body {
     width: 100%;
+    background: transparent;
 }
 #header {
     display: flex;
@@ -190,26 +191,4 @@ body {
 .video-list{
     max-height: 100%;
     text-transform: uppercase;
-}
-
-.footer {
-    width: 100%;
-    min-height: 10vh;
-    text-align: center;
-    padding: 10px 0;
-    background-color: var(--clr-accent);
-}
-.footer h4 {
-    margin-bottom: 25px;
-    margin-top: 20px;
-    font-weight: 600;
-}
-.icons .fa-brands {
-   color: var(--clr-GBpink);
-   margin: 0 13px;
-   cursor: pointer;
-   padding: 18px 0;
-}
-.footer p {
-    font-size: 12px;
 }
