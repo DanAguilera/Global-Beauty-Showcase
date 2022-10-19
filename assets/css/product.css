@@ -152,6 +152,7 @@ body {
 .search-results {
     float: left;
     padding: 2rem;
+    display: flex;
     align-items: center;
     width: 100%;
     justify-content: top;
