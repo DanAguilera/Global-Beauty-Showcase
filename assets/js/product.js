@@ -47,5 +47,4 @@ var getProductType = function (event) {
 
 };
 
-// Youtube API key: AIzaSyDRwtIC_l1Krdko-UKXVgfwvQVahHtmkqI
 
