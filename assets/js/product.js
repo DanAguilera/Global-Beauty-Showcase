@@ -85,7 +85,7 @@ var videoSearch = function (event) {
                     selectedVideoEl.setAttribute('type', 'text/html');
                     selectedVideoEl.setAttribute('width','640');
                     selectedVideoEl.setAttribute('height','360');
-                    selectedVideoEl.setAttribute('src','https://wwww.youtube.com/embed/' + selectedVideo);
+                    selectedVideoEl.setAttribute('src','https://www.youtube.com/embed/' + selectedVideo);
                     selectedVideoEl.setAttribute('frameborder', '0');
                     selectedVideoList.appendChild(selectedVideoEl)
 
